@@ -1,0 +1,293 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/*variaveis*/
+
+/*CORES*/
+
+:root{
+    --cor0: rgb(226, 226, 226);
+    --cor1: rgb(218, 214, 214);
+}
+
+
+/*header*/
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+/*MENU*/
+
+header > nav{
+    padding-top: 15px;
+    height: 4vh;
+    background-color: #000000;
+}
+
+.nav-list > li {
+    list-style: none;
+    display: inline;
+    margin: 0px 30px 0px 30px;
+    padding: 0px;
+    height: 6vh;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+li a:hover{
+    background-color: #fff;
+    color: #000000;
+}
+
+/*MENU HANBURGUER*/
+
+.menu-responsivo{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-responsivo div{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: -3px 5px 5px 5px;
+}
+
+@media (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    ul{
+        position: absolute;
+        top: 6vh;
+        left: 0;
+        width: 25vw;
+        height: 92vh;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(500%);
+    }
+
+    ul li{
+        margin-right: 0;
+
+    }
+
+    .menu-responsivo{
+        display: block;
+    }
+
+    ul.active{
+        transform: translateX(0);
+    }
+
+}
+
+/*icones*/
+
+header > nav > a > img{
+    float: right;
+    margin-top: -40px;
+    max-height: 30px;
+    padding: 15px;
+}
+
+/*CORPO PRINCIPAL*/
+
+body {
+    background-color: #6d696928;
+    overflow-x: hidden;
+}
+
+aside{
+    width: 100%;
+    height: 600px;
+}
+
+aside > div > p{
+    text-align: center;
+    margin: 100px 10% 50px 10%;
+    font-weight: bolder;
+}
+
+main{
+    max-width: 100%;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0px 0px 10px 0px;
+}
+
+#banner{
+    background-image: url(../imagens/banner/fili-santillan-1HCb2gPk3ik-unsplash.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 88%;
+    color: #FFF;
+}
+
+
+#minhafoto{
+    display: block;
+    border-radius: 50%;
+    max-height: 120px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin: 110px 8px 0px 530px;*/
+}
+
+.imgdireita{
+    float: right;
+    margin: 20px;
+    padding: 0px;
+    max-height: 100px;
+}
+
+.imgesquerda{
+    float: left;
+    margin: 20px;
+    padding: 0px;
+    max-height: 100px;
+}
+
+.direita{
+    text-align: center;
+    /*width: 900px;*/
+    margin: 60px;
+    line-height: 20px;
+    padding: 0px;
+    padding-right: 0px;
+}
+
+.esquerda{
+    text-align: center;
+    /*width: 900px;*/
+    margin: 60px;
+    padding: 0px;
+    padding-left: 0px;
+}
+
+.tdireita{
+    text-align: right;
+    padding-top: 5px;
+    margin-right: 30px;
+}
+
+.tesquerda{
+    text-align: left;
+    padding-top: 5px;
+    padding-top: 5px;
+    margin-left: 30px;
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+.ddireita{
+    color: rgb(0, 0, 0);
+    background-color: var(--cor0);
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.desquerda{
+    color: rgb(0, 0, 0);
+    background-color: var(--cor1);
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+article{
+    border: #000000;
+}
+
+article > p{
+    margin: 20px 150px 20px 30px;
+}
+
+.interesses{
+    background-color: var(--cor1);
+    padding: 20px;
+}
+
+.interesses > h2{
+    margin: auto;
+}
+
+.contato{
+    background-color: var(--cor0);
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.contato > h2{
+    padding-top: 25px;
+    margin-left: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    margin-top: 50px;
+    /*margin: 5% 25% 5% 25%;*/
+    box-shadow: 5px 3px 7px 1px #00000067
+}
+
+input:focus{
+    background-color: #f5e98038;
+}
+
+form > input{
+    border: solid #00000033;
+    height: 40px;
+
+}
+
+button{
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+form label{
+    margin-top: 10px;
+}
+
+footer{
+    background-color: #000000;
+    color: #FFF;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+
+}
