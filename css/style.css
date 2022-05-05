@@ -2,6 +2,12 @@
     padding: 0px;
     margin: 0px;
 }
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
 /*variaveis*/
 
 /*CORES*/
@@ -209,7 +215,7 @@ div{
     padding: 0px;
 }
 
-.ddireita{
+.dflex{
     color: rgb(0, 0, 0);
     background-color: var(--cor0);
     height: 200px;
@@ -217,7 +223,7 @@ div{
     padding: 0px;
 }
 
-.desquerda{
+.e_flex{
     color: rgb(0, 0, 0);
     background-color: var(--cor1);
     height: 200px;
@@ -236,27 +242,39 @@ article > p{
 @media screen and (max-width: 800px){
     main{
         min-width: 100%;
-        padding: 10px;
+        padding: 15px;
     }
 
-    .ddireita{
-        width: 100%;
+    .dflex{
+        flex: 1 1;
+        height: 500px;
     }
 
-    .desquerda{
-        width: 100%;
+    .e_flex{
+        flex: 1 1;
+        height: 500px;
     }
 
+    .imgdireita{
+        display: block;
+        margin-right: 32%;
+        max-height: 170px;
+    }
+
+    .imgesquerda{
+        display: block;
+        margin-left: 32%;
+        max-height: 170px;
+    }
+    
     .direita{
-        padding: 5px;
-        margin: auto;
-        line-height: 20px;
+        display: inline-block;
+        padding: 15px;
     }
 
     .esquerda{
-        padding: 5px;
-        margin: auto;
-        line-height: 20px;
+        display: inline-block;
+        padding: 15px;
     }
 
 }
